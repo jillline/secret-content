@@ -19,7 +19,7 @@
       const result = await liff.shareTargetPicker([
          {
     "altText": "Flex Message",
-    "contents": {
+    "contents":{
   "type": "carousel",
   "contents": [
     {
@@ -29,7 +29,43 @@
         "size": "full",
         "aspectRatio": "20:13",
         "aspectMode": "cover",
-        "url": "https://drive.google.com/uc?id=16A5sfDyhAg6PozSvIJmallTbw3gKNMzO"
+        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_5_carousel.png"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Arm Chair, White",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "$49",
+                "wrap": true,
+                "weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": ".99",
+                "wrap": true,
+                "weight": "bold",
+                "size": "sm",
+                "flex": 0
+              }
+            ]
+          }
+        ]
       },
       "footer": {
         "type": "box",
@@ -41,8 +77,16 @@
             "style": "primary",
             "action": {
               "type": "uri",
-              "label": "สนใจ",
-              "uri": "https://lin.ee/8l2AQvr"
+              "label": "Add to Cart",
+              "uri": "https://linecorp.com"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Add to wishlist",
+              "uri": "https://linecorp.com"
             }
           }
         ]
@@ -55,7 +99,53 @@
         "size": "full",
         "aspectRatio": "20:13",
         "aspectMode": "cover",
-        "url": "https://drive.google.com/uc?id=1p30XFu-zzzZuelCiA8khv_Ncj7zzNUaD"
+        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_6_carousel.png"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Metal Desk Lamp",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "$11",
+                "wrap": true,
+                "weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": ".99",
+                "wrap": true,
+                "weight": "bold",
+                "size": "sm",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Temporarily out of stock",
+            "wrap": true,
+            "size": "xxs",
+            "margin": "md",
+            "color": "#ff5551",
+            "flex": 0
+          }
+        ]
       },
       "footer": {
         "type": "box",
@@ -64,10 +154,21 @@
         "contents": [
           {
             "type": "button",
+            "flex": 2,
+            "style": "primary",
+            "color": "#aaaaaa",
             "action": {
               "type": "uri",
-              "label": "สนใจ",
-              "uri": "https://lin.ee/8l2AQvr"
+              "label": "Add to Cart",
+              "uri": "https://linecorp.com"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Add to wish list",
+              "uri": "https://linecorp.com"
             }
           }
         ]
@@ -75,10 +176,6 @@
     },
     {
       "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://drive.google.com/uc?id=1De8viRMC-1qrt2jhxxVkbbUh-7GhGBqs"
-      },
       "body": {
         "type": "box",
         "layout": "vertical",
@@ -91,13 +188,13 @@
             "action": {
               "type": "uri",
               "label": "See more",
-              "uri": "https://lin.ee/8l2AQvr"
+              "uri": "https://linecorp.com"
             }
           }
         ]
       }
     }
-]
+  ]
 }
       ])
       if (result) {
