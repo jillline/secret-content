@@ -17,104 +17,101 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
-        {
-          "type": "flex",
-          "altText": "Flex Message",
-          "contents": {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "md",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "BROWN'S ADVENTURE",
-                  "size": "xl",
-                  "gravity": "center",
-                  "weight": "bold",
-                  "wrap": true
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "spacing": "sm",
-                  "margin": "lg",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Date",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "Monday 25, 9:00PM",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Place",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "LINE Thailand",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "margin": "xxl",
-                      "contents": [
-                        {
-                          "type": "spacer"
-                        },
-                        {
-                          "type": "image",
-                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
-                          "size": "xl",
-                          "aspectMode": "cover"
-                        },
-                        {
-                          "type": "text",
-                          "text": "You can enter the theater by using this code instead of a ticket",
-                          "margin": "xxl",
-                          "size": "xs",
-                          "color": "#AAAAAA",
-                          "wrap": true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
+         {
+    "altText": "Flex Message",
+    "contents": {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://i.pinimg.com/originals/af/bb/0c/afbb0c7798268a088deafd34be7285ad.jpg",
+        "size": "full",
+        "aspectRatio": "9:16",
+        "aspectMode": "cover"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://cdn.pixabay.com/photo/2016/07/10/17/54/kids-1508121_960_720.jpg",
+            "size": "3xl",
+            "aspectMode": "cover"
           }
-        }
+        ],
+        "position": "absolute",
+        "borderWidth": "2px",
+        "borderColor": "#000000",
+        "cornerRadius": "150px",
+        "offsetStart": "20%",
+        "offsetTop": "15%"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Profile",
+            "size": "xxl",
+            "color": "#ff0000"
+          }
+        ],
+        "position": "absolute",
+        "offsetStart": "38%",
+        "offsetTop": "50%"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ด.ช. กำเอิบ คารูอึ",
+            "size": "xxl",
+            "color": "#000000"
+          }
+        ],
+        "position": "absolute",
+        "offsetStart": "15%",
+        "offsetTop": "60%"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Facbook เพียงคลิกปุ่มนี้",
+            "size": "md",
+            "color": "#ff00ff",
+            "margin": "md"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Facebook",
+              "uri": "http://linecorp.com/"
+            },
+            "style": "primary",
+            "margin": "md"
+          }
+        ],
+        "position": "absolute",
+        "offsetStart": "25%",
+        "offsetTop": "70%"
+      }
+    ],
+    "paddingAll": "0px"
+  }
+},
+    "type" : "flex"
+}
       ])
       if (result) {
         alert(`[${result.status}] Message sent!`)
