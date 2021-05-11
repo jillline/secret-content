@@ -21,29 +21,85 @@
       {
     "altText": "This is a flex",
     "contents": {
-      "direction": "ltr",
-      "size": "giga",
-      "body": {
-        "paddingAll": "0px",
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=16A5sfDyhAg6PozSvIJmallTbw3gKNMzO"
+      },
+      "footer": {
         "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
         "contents": [
           {
-            "type": "image",
-            "aspectRatio": "16:9",
-            "aspectMode": "fit",
-            "gravity": "center",
-            "size": "full",
-            "animated": true,
-            "url": "https://drive.google.com/uc?id=1MBcwfCxit57H4Dfo86ZMEpwgUeBvuFsu",
-            "position": "relative"
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "สนใจ",
+              "uri": "https://lin.ee/8l2AQvr"
+            }
           }
-        ],
-        "layout": "vertical"
-      },
-      "type": "bubble"
+        ]
+      }
     },
-    "type": "flex"
-  }
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=1p30XFu-zzzZuelCiA8khv_Ncj7zzNUaD"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "สนใจ",
+              "uri": "https://lin.ee/8l2AQvr"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://drive.google.com/uc?id=1De8viRMC-1qrt2jhxxVkbbUh-7GhGBqs"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "flex": 1,
+            "gravity": "center",
+            "action": {
+              "type": "uri",
+              "label": "See more",
+              "uri": "https://lin.ee/8l2AQvr"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
       ])
       if (result) {
         alert(`[${result.status}] Message sent!`)
