@@ -20,97 +20,84 @@
          {
     "altText": "Flex Message",
     "contents": {
-  "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
         "type": "image",
-        "url": "https://i.pinimg.com/originals/af/bb/0c/afbb0c7798268a088deafd34be7285ad.jpg",
         "size": "full",
-        "aspectRatio": "9:16",
-        "aspectMode": "cover"
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=16A5sfDyhAg6PozSvIJmallTbw3gKNMzO"
       },
-      {
+      "footer": {
         "type": "box",
         "layout": "vertical",
+        "spacing": "sm",
         "contents": [
           {
-            "type": "image",
-            "url": "https://cdn.pixabay.com/photo/2016/07/10/17/54/kids-1508121_960_720.jpg",
-            "size": "3xl",
-            "aspectMode": "cover"
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "สนใจ",
+              "uri": "https://lin.ee/8l2AQvr"
+            }
           }
-        ],
-        "position": "absolute",
-        "borderWidth": "2px",
-        "borderColor": "#000000",
-        "cornerRadius": "150px",
-        "offsetStart": "20%",
-        "offsetTop": "15%"
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=1p30XFu-zzzZuelCiA8khv_Ncj7zzNUaD"
       },
-      {
+      "footer": {
         "type": "box",
         "layout": "vertical",
+        "spacing": "sm",
         "contents": [
-          {
-            "type": "text",
-            "text": "Profile",
-            "size": "xxl",
-            "color": "#ff0000"
-          }
-        ],
-        "position": "absolute",
-        "offsetStart": "38%",
-        "offsetTop": "50%"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "ด.ช. กำเอิบ คารูอึ",
-            "size": "xxl",
-            "color": "#000000"
-          }
-        ],
-        "position": "absolute",
-        "offsetStart": "15%",
-        "offsetTop": "60%"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "Facbook เพียงคลิกปุ่มนี้",
-            "size": "md",
-            "color": "#ff00ff",
-            "margin": "md"
-          },
           {
             "type": "button",
             "action": {
               "type": "uri",
-              "label": "Facebook",
-              "uri": "http://linecorp.com/"
-            },
-            "style": "primary",
-            "margin": "md"
+              "label": "สนใจ",
+              "uri": "https://lin.ee/8l2AQvr"
+            }
           }
-        ],
-        "position": "absolute",
-        "offsetStart": "25%",
-        "offsetTop": "70%"
+        ]
       }
-    ],
-    "paddingAll": "0px"
-  }
-},
-    "type" : "flex"
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://drive.google.com/uc?id=1De8viRMC-1qrt2jhxxVkbbUh-7GhGBqs"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "flex": 1,
+            "gravity": "center",
+            "action": {
+              "type": "uri",
+              "label": "See more",
+              "uri": "https://lin.ee/8l2AQvr"
+            }
+          }
+        ]
+      }
+    }
+]
 }
       ])
       if (result) {
