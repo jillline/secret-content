@@ -9,97 +9,112 @@
     button { display: none; width: 50%; padding: 16px 0; margin: 16px auto }
   </style>
 </head>
-<body><div imgalign="center">
-  <img src="http://drive.google.com/uc?export=view&id=1z7wKN-0KZdhk-30SIEgApDI9bbNGzmhw" width="600px" height="200px"><br/><br/>
+<body>
   <button id="btnShare" onclick="sendShare()">Share Target Picker</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
-  <script src=" https://static.line-scdn.net/liff/edge/versions/2.9.0/sdk.js"></script>
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.9.0/sdk.js"></script>
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
-      {
-    "altText": "This is a flex",
-    "contents": {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "20:13",
-        "aspectMode": "cover",
-        "url": "https://drive.google.com/uc?id=16A5sfDyhAg6PozSvIJmallTbw3gKNMzO"
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "style": "primary",
-            "action": {
-              "type": "uri",
-              "label": "สนใจ",
-              "uri": "https://lin.ee/8l2AQvr"
+        {
+          "type": "flex",
+          "altText": "Flex Message",
+          "contents": {
+            "type": "bubble",
+            "body": {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "md",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "BROWN'S ADVENTURE",
+                  "size": "xl",
+                  "gravity": "center",
+                  "weight": "bold",
+                  "wrap": true
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "spacing": "sm",
+                  "margin": "lg",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "spacing": "sm",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "Date",
+                          "flex": 1,
+                          "size": "sm",
+                          "color": "#AAAAAA"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Monday 25, 9:00PM",
+                          "flex": 4,
+                          "size": "sm",
+                          "color": "#666666",
+                          "wrap": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "baseline",
+                      "spacing": "sm",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "Place",
+                          "flex": 1,
+                          "size": "sm",
+                          "color": "#AAAAAA"
+                        },
+                        {
+                          "type": "text",
+                          "text": "LINE Thailand",
+                          "flex": 4,
+                          "size": "sm",
+                          "color": "#666666",
+                          "wrap": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "margin": "xxl",
+                      "contents": [
+                        {
+                          "type": "spacer"
+                        },
+                        {
+                          "type": "image",
+                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
+                          "size": "xl",
+                          "aspectMode": "cover"
+                        },
+                        {
+                          "type": "text",
+                          "text": "You can enter the theater by using this code instead of a ticket",
+                          "margin": "xxl",
+                          "size": "xs",
+                          "color": "#AAAAAA",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           }
-        ]
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "20:13",
-        "aspectMode": "cover",
-        "url": "https://drive.google.com/uc?id=1p30XFu-zzzZuelCiA8khv_Ncj7zzNUaD"
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "สนใจ",
-              "uri": "https://lin.ee/8l2AQvr"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://drive.google.com/uc?id=1De8viRMC-1qrt2jhxxVkbbUh-7GhGBqs"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "flex": 1,
-            "gravity": "center",
-            "action": {
-              "type": "uri",
-              "label": "See more",
-              "uri": "https://lin.ee/8l2AQvr"
-            }
-          }
-        ]
-      }
-    }
-  ]
-}
+        }
       ])
       if (result) {
         alert(`[${result.status}] Message sent!`)
@@ -121,7 +136,7 @@
       window.location.reload()
     }
     async function main() {
-      await liff.init({ liffId: "1655706043-JoajkGO9" })
+      await liff.init({ liffId: "1655940347-18ebR2Pq" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
         if (!liff.isInClient()) {
